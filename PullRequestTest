@@ -1,0 +1,30 @@
+﻿GIT+++++++++++++
+Pull Request: It is a method of submitting contributions to a project.
+Clone repository: git clone https://…..git
+Make sure you are in the right branch: git branch
+cd anyBranch
+Make changes in your local
+Checked modified files (optional): git status
+Add changes: git add .
+Commit changes with message: git commit -m “any message”
+Add changes directly (optional): git add AnyChange.file
+Commit changes with message: git commit -m “any message”
+Check your status (optional): git status
+Create a new branch on local: git checkout -b anyBranchName (I'm entering docummentation/txtFile)
+Convention: feature/description, release/description, bugfix/description, hotfix/description, documentation/description,
+Push changes: git push
+Note: git push (prompts what needs to be entered. Copy/Paste)
+Refresh Bitbucket
+Create a Pull request in BitBucket (to send changes to master branch):
+In Bitbucket add title, description, reviewers, and close branch.
+
+Editing a Pull Request before merging:
+Clone repository: git clone https://…..git
+See which branch you are in: git branch
+Make sure you are in the right branch: git checkout docummentation/txtFile
+Confirm which branch you are in: git branch
+Make changes in local
+Add changes: git add .
+Commit changes with Generic message: git commit -m “.” (squash git commits together)
+
+
