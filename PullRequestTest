@@ -24,7 +24,7 @@ See which branch you are in: git branch
 Make sure you are in the right branch: git checkout docummentation/txtFile
 Confirm which branch you are in: git branch
 Make changes in local
-Add changes: git add .
-Commit changes with Generic message: git commit -m “.” (squash git commits together)
-
+Add changes: git add . (or I can git add <specific file>)
+Commit changes with message: git commit -m “any message"
+Override my pull request: git push origin +docummentation/txtFile (+ overrides)
 
