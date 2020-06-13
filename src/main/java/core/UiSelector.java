@@ -1,14 +1,13 @@
 package core;
 
-//Important class for Appium reference
-//It returns a UiSelectorPath String to an expecific weblement
-//It uses the Node key from Ui Automator Viewer
+/*
+* Returns a UiSelectorPath String to an expecific weblement. It uses the Node key from Ui Automator Viewer
+* driver.findElementsByUIAutomator("new UiSelector().text(\"help\")").click()
+*  */
 public class UiSelector {
 
-    UiSelector uiSelector = new UiSelector();
     private String locator = "new UiSelector()";
 
-    //To find elements we will just refer a uiSelector method from this class
     public UiSelector resourceId(String value){
         locator += ".resourceId(\""+value+"\")";
         return this;

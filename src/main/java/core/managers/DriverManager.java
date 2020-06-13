@@ -7,6 +7,7 @@ import core.MyLogger;
 import core.Timer;
 import core.constants.Arg;
 import core.constants.Resources;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -31,7 +32,7 @@ public class DriverManager {
     private static String deviceID;
 
     private static HashMap<String, URL> hosts;
-    private static String unlockPackage = "io.appium.da"; //unlock app package
+    private static String unlockPackage = "io.appium.unlock";
 
     private static DesiredCapabilities getCaps(String deviceID){
         MyLogger.log.info("Creating driver caps for device: "+deviceID);
@@ -92,6 +93,7 @@ public class DriverManager {
 //                if(useDevice(deviceID)){
 //                    queueUp();
 //                    gracePeriod();
+                String s = "car";
                     MyLogger.log.info("Trying to create new Driver for device: "+device);
 //                    createService().start();
                     Android.driver = new AndroidDriver(host(device), getCaps(device));

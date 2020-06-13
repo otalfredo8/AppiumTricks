@@ -10,7 +10,8 @@ import java.io.IOException;
 
 public class Resources {
 
-    public static final String QUEUE = ServerManager.getWorkingDir()+"/src/main/resources/queue.json";
+    public static final String QUEUE =
+            ServerManager.getWorkingDir()+"/src/main/resources/queue.json";
 
     public static JSONObject getQueue() throws IOException, ParseException {
         JSONParser parser = new JSONParser();

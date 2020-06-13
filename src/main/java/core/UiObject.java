@@ -6,9 +6,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 
-//Important class for Appium reference
-//It handle all the actions
-//It needs to know on which selector to permform those actions
+/*
+* UiObject handles functions locating elements "driver.findElementByAndroidUIAutomator(locator)"
+*/
 public class UiObject {
 
     private String locator;

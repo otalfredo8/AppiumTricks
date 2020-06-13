@@ -28,3 +28,5 @@ Add changes: git add . (or I can git add <specific file>)
 Commit changes with message: git commit -m “any message"
 Override my pull request: git push origin +docummentation/txtFile (+ overrides)
 
+Merging branches: Bitbucket > Branches > Three dots > Merge
+

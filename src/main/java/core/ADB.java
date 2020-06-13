@@ -34,12 +34,14 @@ public class ADB {
         command("adb start-server");
     }
 
+
     public static ArrayList getConnectedDevices(){
         ArrayList devices = new ArrayList();
         String output = command("adb devices");
         for(String line : output.split("\n")){
             line = line.trim();
-            if(line.endsWith("device")) devices.add(line.replace("device", "").trim());
+            if(line.endsWith("device"))
+                devices.add(line.replace("device", "").trim());
         }
         return devices;
     }
