@@ -1,7 +1,6 @@
 package core;
 
 import api.android.Android;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
@@ -13,8 +12,6 @@ public class UiObject {
 
     private String locator;
 
-    //Constructor says,
-    // "whenever you initialize a UiObject object You must initialize it with a locator"
     UiObject(String locator){
         this.locator = locator;
 //        System.out.println(this.locator);
